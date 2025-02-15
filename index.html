@@ -1,305 +1,277 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Vidura Priyadarshana</title>
+ 
+        <link rel="stylesheet" href="styles/body.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/profile.css">
 
-        <style>
-            .skills-section {
-                display: none;
-            }
-            .skills-section.active {
-                display: block;
-            }
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
+
         <header>
             <div class="logo">
                 <h1>Vidura.</h1>
             </div>
-            <nav>
-                <button>
-                    <img src="assets/icons/home.png" alt="Home" width="20px">
-                </button>
-                <button>
-                    <img src="assets/icons/book.png" alt="Book" width="20px">
-                </button>
-                <button>
-                    <img src="assets/icons/folder.png" alt="Folder" width="20px">
-                </button>
-                <button>
-                    <img src="assets/icons/mail.png" alt="Mail" width="20px">
-                </button>
+            <nav class="nav-bar">
+                <div class="button-background">
+                    <button class="nav-buttons" herf="#profile">
+                        <img class="nav-icone" src="assets/icons/icons8-home-48.png" alt="Home">
+                    </button>
+                    <button class="nav-buttons" herf="#skills">
+                        <img class="nav-icone" src="assets/icons/icons8-book-60.png" alt="Book">
+                    </button>
+                    <button class="nav-buttons">
+                        <img class="nav-icone" src="assets/icons/icons8-folder-48.png" alt="Folder">
+                    </button>
+                    <button class="nav-buttons">
+                        <img class="nav-icone" src="assets/icons/icons8-email-48.png" alt="Mail">
+                    </button>
+                </div>
             </nav>
-            
         </header>
     
         <main>
 
-            <section>
-
-                <img src="assets/images/DSC01769_1.JPG" alt="Vidura Priyadarshana" style="width: 200px;">
-
-                <h1>Vidura Priyadarshana</h1>
-                <p>A Software Engineer who enjoys creating useful and innovative software.</p>
-
-                <div>
-
-                  <a href="https://www.facebook.com">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" width="30px"/>
-                  </a>
-                  <a href="https://www.instagram.com">
-                    <img src="path-to-instagram-icon" alt="Instagram" style="width: 30px;">
-                  </a>
-                  <a href="mailto:your-email@example.com">
-                    <img src="path-to-email-icon" alt="Email" style="width: 30px;">
-                  </a>
-                  <a href="https://github.com">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30px"/>
-                  </a>
-
-                </div>
-
-            </section>
-            
-            <section>
-                <div class="introduction">
-                    <h1>SOFTWARE ENGINEER</h1>
-                    <p>Dedicated to crafting intuitive designs and transforming ideas into meaningful creations.</p>
-                    <div class="links">
-                        <a href="https://github.com/" target="_blank">GitHub</a>
-                        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-                        <a href="">Contact Me</a>
-                    </div>
-                    <a href="cv.pdf" download class="download-cv">Download CV</a> 
-                </div>
-            </section>
-
-            <!-- <section>
-                <h1>SKILLS</h1>
-                <div>
-                    <button>Languages</button>
-                    <button>Back End</button>
-                    <button>Front End</button>
-                    <button>Tools</button>
-                </div>
-
-                <section>
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="50px" />
-                        <span>JAVA</span>
-                    </div>
-                    <div>  
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="50px"/>
-                        <span>PYTHON</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50px"/>
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50px"/>
-                        <span>CSS</span>
+            <section class="left-section">
+                <section id="profile" class="profile-card">
+                    <img class="profile-pic" src="assets/images/DSC01769_1.JPG" alt="Vidura Priyadarshana" style="width: 200px;">
+    
+                    <h1 class="first-name">Vidura</h1>
+                    <h1 class="last-name">Priyadarshana</h1>
+                    <p class="description">A Software Engineer who enjoys creating useful and innovative software.</p>
+    
+                    <div class="social-links">
+                        <a class="social-link" href="https://www.facebook.com">
+                            <img class="social-icon" src="/assets/icons/icons8-facebook-50.png"/>
+                        </a>
+                        <a class="social-link" href="https://www.instagram.com">
+                            <img class="social-icon" src="assets/icons/icons8-instagram-30.png" alt="Instagram">
+                        </a>
+                        <a class="social-link" href="mailto:your-email@example.com">
+                            <img class="social-icon" src="assets/icons/icons8-gmail-50.png" alt="Email">
+                        </a>
+                        <a class="social-link" href="https://github.com">
+                            <img class="social-icon" src="assets/icons/icons8-github-48.png" />
+                        </a>
                     </div>
                 </section>
-            </section> -->
-
-            <section>
-                <h1>SKILLS</h1>
-                <div class="button-group">
-                    <button onclick="switchSection('languages')">Languages</button>
-                    <button onclick="switchSection('backend')">Back End</button>
-                    <button onclick="switchSection('frontend')">Front End</button>
-                    <button onclick="switchSection('tools')">Tools</button>
-                </div>
-    
-                <div id="languages" class="skills-section active">
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="50px" alt="Java" />
-                        <span>JAVA</span>
-                    </div>
-                    <div>  
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="50px" alt="Python" />
-                        <span>PYTHON</span>
-                    </div>
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50px" alt="JavaScript" />
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="50px" alt="TypeScript"/>
-                        <span>TYPESCRIPT</span>
-                    </div>
-                </div>
-    
-                <div id="backend" class="skills-section">
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" width="50px" alt="Spring"/>
-                        <span>SPRING</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" width="50px" alt="MySQL"/>
-                        <span>MYSQL</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="50px" alt="Numpy"/>
-                        <span>NUMPY</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" width="50px" alt="Pandas"/>
-                        <span>PANDAS</span>
-                    </div>
-                    
-                </div>
-    
-                <div id="frontend" class="skills-section">
-                    
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50px" alt="CSS" />
-                        <span>CSS</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50px" alt="HTML"/>
-                        <span>HTML</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" width="50px" alt="CSS"/>
-                        <span>ANGULAR</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="50px" alt="CSS"/>
-                        <span>BOOTSTRAP</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="50px" alt="CSS"/>
-                        <span>REACT</span>
-                    </div>
-
-                </div>
-    
-                <div id="tools" class="skills-section">
-                    
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="50px" alt="CSS"/>
-                        <span>JUPYTER NOTEBOOK</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original-wordmark.svg" width="50px" alt="CSS"/>
-                        <span>ANACONDA</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="50px" alt="CSS"/>
-                        <span>DOCKER</span>
-                    </div>
-
-                    <div>  
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="50px" alt="CSS"/>
-                        <span>FIGMA</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="50px" alt="CSS"/>
-                        <search>GIT</search>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="50px" alt="CSS"/>
-                        <section>GITHUB</section>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="50px" alt="CSS"/>
-                        <span>NPM</span>
-                    </div>
-                    
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="50px" alt="CSS"/>
-                        <span>LINUX</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="50px" alt="CSS"/>
-                        <span>POSTMAN</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg" width="50px" alt="CSS"/>
-                        <span>UBUNTU</span>
-                    </div>
-
-                    <div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="50px" alt="CSS"/>
-                        <span>VITE</span>
-                    </div>
-                </div>
-
             </section>
-
-            <section>
-                <h2>Projects</h2>
-                <div>
-                    <div>
-                        <img src="assets/projects/Screenshot 2025-01-17 193915.png" alt="Restaurant Management System Screenshot" width="200">
-                        <h3>Restaurant Management System</h3>
-                        <p>A system designed for managing restaurant operations efficiently.</p>
+            
+            <section class="right-section">
+                <section id="introduction">
+                    <div class="introduction">
+                        <h1>SOFTWARE ENGINEER</h1>
+                        <p>Dedicated to crafting intuitive designs and transforming ideas into meaningful creations.</p>
+                        <div class="links">
+                            <a href="https://github.com/" target="_blank">GitHub</a>
+                            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                            <a href="">Contact Me</a>
+                        </div>
+                        <a href="cv.pdf" download class="download-cv">Download CV</a> 
                     </div>
-                    <div>
-                        <img src="assets/projects/Screenshot 2025-01-17 195016.png" alt="Tic Tac Toe Game Screenshot" width="200">
-                        <h3>Tic Tac Toe Game</h3>
-                        <p>A simple Tic Tac Toe game implemented using JavaFX.</p>
+                </section>
+    
+                <section id="skills">
+                    <h1>SKILLS</h1>
+                    <div class="button-group">
+                        <button onclick="switchSection('languages')">Languages</button>
+                        <button onclick="switchSection('backend')">Back End</button>
+                        <button onclick="switchSection('frontend')">Front End</button>
+                        <button onclick="switchSection('tools')">Tools</button>
                     </div>
-                </div>
+        
+                    <div id="languages" class="skills-section active">
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="50px" alt="Java" />
+                            <span>JAVA</span>
+                        </div>
+                        <div>  
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="50px" alt="Python" />
+                            <span>PYTHON</span>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50px" alt="JavaScript" />
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="50px" alt="TypeScript"/>
+                            <span>TYPESCRIPT</span>
+                        </div>
+                    </div>
+        
+                    <div id="backend" class="skills-section">
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" width="50px" alt="Spring"/>
+                            <span>SPRING</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" width="50px" alt="MySQL"/>
+                            <span>MYSQL</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="50px" alt="Numpy"/>
+                            <span>NUMPY</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" width="50px" alt="Pandas"/>
+                            <span>PANDAS</span>
+                        </div>
+                        
+                    </div>
+        
+                    <div id="frontend" class="skills-section">
+                        
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50px" alt="CSS" />
+                            <span>CSS</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50px" alt="HTML"/>
+                            <span>HTML</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" width="50px" alt="CSS"/>
+                            <span>ANGULAR</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="50px" alt="CSS"/>
+                            <span>BOOTSTRAP</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="50px" alt="CSS"/>
+                            <span>REACT</span>
+                        </div>
+    
+                    </div>
+        
+                    <div id="tools" class="skills-section">
+                        
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="50px" alt="CSS"/>
+                            <span>JUPYTER NOTEBOOK</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original-wordmark.svg" width="50px" alt="CSS"/>
+                            <span>ANACONDA</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="50px" alt="CSS"/>
+                            <span>DOCKER</span>
+                        </div>
+    
+                        <div>  
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="50px" alt="CSS"/>
+                            <span>FIGMA</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="50px" alt="CSS"/>
+                            <search>GIT</search>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="50px" alt="CSS"/>
+                            <section>GITHUB</section>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="50px" alt="CSS"/>
+                            <span>NPM</span>
+                        </div>
+                        
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="50px" alt="CSS"/>
+                            <span>LINUX</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="50px" alt="CSS"/>
+                            <span>POSTMAN</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg" width="50px" alt="CSS"/>
+                            <span>UBUNTU</span>
+                        </div>
+    
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="50px" alt="CSS"/>
+                            <span>VITE</span>
+                        </div>
+                    </div>
+    
+                </section>
+    
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div>
+                        <div>
+                            <img src="assets/projects/Screenshot 2025-01-17 193915.png" alt="Restaurant Management System Screenshot" width="200">
+                            <h3>Restaurant Management System</h3>
+                            <p>A system designed for managing restaurant operations efficiently.</p>
+                        </div>
+                        <div>
+                            <img src="assets/projects/Screenshot 2025-01-17 195016.png" alt="Tic Tac Toe Game Screenshot" width="200">
+                            <h3>Tic Tac Toe Game</h3>
+                            <p>A simple Tic Tac Toe game implemented using JavaFX.</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section>
+                    <h1>ASSIGNMENTS</h1>
+    
+                    <div class="card">
+                        <p><span>Assignment 1</span></p>
+                        <p><span>Assignment 2</span></p>
+                        <p><span>Assignment 3</span></p>
+                    </div>
+    
+                </section>
+    
+                <section id="contact">
+                    <h2>LET'S WORK TOGETHER</h2>
+                    <form>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+    
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="your@gmail.com"><br><br>
+    
+                        <label for="company">Company</label><br>
+                        <input type="text" id="company" name="company" placeholder="Company"><br><br>
+    
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" placeholder="Message"></textarea><br><br>
+    
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+                
             </section>
-
-            <section>
-                <h1>ASSIGNMENTS</h1>
-
-                <div class="card">
-                    <p><span>Assignment 1</span></p>
-                    <p><span>Assignment 2</span></p>
-                    <p><span>Assignment 3</span></p>
-                </div>
-
-            </section>
-
-            <section>
-                <h2>LET'S WORK TOGETHER</h2>
-                <form>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
-
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="your@gmail.com"><br><br>
-
-                    <label for="company">Company</label><br>
-                    <input type="text" id="company" name="company" placeholder="Company"><br><br>
-
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" placeholder="Message"></textarea><br><br>
-
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
+            
         </main>
 
         <footer>
