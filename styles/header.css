@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo {
+    padding-left: 10px;
+    font-family: comfortaa;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.button-background {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #262626;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+.nav-buttons {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: transparent 1px solid;
+    margin: 0 3px; 
+}
+
+
+.nav-buttons:hover {
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+.nav-icone {
+    width: 25px;
+}
