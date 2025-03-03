@@ -15,27 +15,8 @@ header {
 
 main {
     display: flex;
-    justify-content: space-between;
-    height: 100vh;
 }
 
-.left-section,
-.right-section {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.left-section{
-    width: 35%;
-}
-
-.right-section {
-    justify-content: flex-start;
-    height: 100vh;
-    padding: 20px;
-    width: 65%;
-}
 
 .skills-section {
     display: none;
