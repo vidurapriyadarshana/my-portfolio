@@ -4,11 +4,38 @@
 }
 
 .software-txt{
-    margin: 0px;
-    padding: 0px;
+    font-size: 100px;
+    color: white;
 }
 
 .engineer-txt{
-    margin: 0px;
-    padding: 0px;
+    margin-top: -25px;
+    font-size: 100px;
+    color: #424040;
+}
+
+.intro-desc{
+    font-size: 20px;
+    width: 60%;
+    color: white;
+}
+
+.links{
+    display: flex;
+    
+}
+
+.contact-me, 
+.download-cv {
+    background-color: white;
+    padding: 5px;
+    border: 0 solid transparent;
+    border-radius: 10px 10px 10px 10px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+
+.icone-intro{
+    margin: 0 5px 0 0;
+    width: 30px;
 }

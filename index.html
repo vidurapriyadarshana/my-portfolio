@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="styles/left-section.css">
         <link rel="stylesheet" href="styles/profile.css">
         <link rel="stylesheet" href="styles/right-section.css">
+        <link rel="stylesheet" href="styles/skills.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +24,10 @@
     </head>
 
     <body>
+        
+        <!-- <video autoplay loop muted controls>
+            <source src="assets/video/videoplayback.mp4" type="video/mp4">
+        </video> -->
 
         <header>
             <div class="logo">
@@ -74,43 +79,67 @@
             </section>
             
             <section class="right-section">
-                <section id="introduction">
+
+                <section id="introduction" class="introduction">
                     <h1 class="software-txt">SOFTWARE</h1>
                     <h1 class="engineer-txt">ENGINEER</h1>
-                    <p>Dedicated to crafting intuitive designs and transforming ideas into meaningful creations.</p>
+                    <p class="intro-desc">Dedicated to crafting intuitive designs and transforming ideas into meaningful creations.</p>
+
                     <div class="links">
-                        <a href="https://github.com/" target="_blank">GitHub</a>
-                        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-                        <a href="">Contact Me</a>
+                        <!-- <a href="https://github.com/" target="_blank">GitHub</a> -->
+                        <!-- <a href="https://linkedin.com/" target="_blank">LinkedIn</a> -->
+                         <img class="icone-intro" src="assets/icons/icons8-github-logo-48.png" alt="">
+                         <img class="icone-intro" src="assets/icons/icons8-linkedin-50.png" alt="">
+                        <!-- <a href="" class="contact-me">Contact Me</a> -->
+                         <button class="contact-me">Contact Me</button>
+                        <!-- <a href="cv.pdf" download class="download-cv">Download CV</a>  -->
+                         <button class="download-cv">Download CV</button>
                     </div>
-                    <a href="cv.pdf" download class="download-cv">Download CV</a> 
+                    
                 </section>
     
-                <section id="skills">
-                    <h1>SKILLS</h1>
-                    <div class="button-group">
+                <section id="skills" class="skills">
+                    <h1 class="skills-title">SKILLS</h1>
+
+                    <div class="radio-inputs">
+                        <button class="radio" onclick="switchSection('languages')">
+                            <span class="name">Languages</span>
+                        </button>
+                        <button class="radio" onclick="switchSection('backend')">
+                            <span class="name">Back End</span>
+                        </button>
+                        <button class="radio" onclick="switchSection('frontend')">
+                            <span class="name">Front End</span>
+                        </button>
+                        <button class="radio" onclick="switchSection('tools')">
+                            <span class="name">Tools</span>
+                        </button>
+                    </div>
+
+                    <!-- <div class="button-group">
                         <button onclick="switchSection('languages')">Languages</button>
                         <button onclick="switchSection('backend')">Back End</button>
                         <button onclick="switchSection('frontend')">Front End</button>
                         <button onclick="switchSection('tools')">Tools</button>
-                    </div>
+                    </div> -->
         
                     <div id="languages" class="skills-section active">
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="50px" alt="Java" />
                             <span>JAVA</span>
                         </div>
-                        <div>  
+                        
+                        <div class="skill-card">  
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="50px" alt="Python" />
                             <span>PYTHON</span>
                         </div>
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50px" alt="JavaScript" />
                             <span>JAVASCRIPT</span>
                         </div>
                         
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="50px" alt="TypeScript"/>
                             <span>TYPESCRIPT</span>
                         </div>
@@ -118,22 +147,22 @@
         
                     <div id="backend" class="skills-section">
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" width="50px" alt="Spring"/>
                             <span>SPRING</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" width="50px" alt="MySQL"/>
                             <span>MYSQL</span>
-                        </div>
+                        </div class="skill-card">
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="50px" alt="Numpy"/>
                             <span>NUMPY</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" width="50px" alt="Pandas"/>
                             <span>PANDAS</span>
                         </div>
@@ -142,27 +171,27 @@
         
                     <div id="frontend" class="skills-section">
                         
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50px" alt="CSS" />
                             <span>CSS</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50px" alt="HTML"/>
                             <span>HTML</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" width="50px" alt="CSS"/>
                             <span>ANGULAR</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="50px" alt="CSS"/>
                             <span>BOOTSTRAP</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="50px" alt="CSS"/>
                             <span>REACT</span>
                         </div>
@@ -171,57 +200,57 @@
         
                     <div id="tools" class="skills-section">
                         
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="50px" alt="CSS"/>
                             <span>JUPYTER NOTEBOOK</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original-wordmark.svg" width="50px" alt="CSS"/>
                             <span>ANACONDA</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="50px" alt="CSS"/>
                             <span>DOCKER</span>
                         </div>
     
-                        <div>  
+                        <div class="skill-card">  
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="50px" alt="CSS"/>
                             <span>FIGMA</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="50px" alt="CSS"/>
                             <search>GIT</search>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="50px" alt="CSS"/>
                             <section>GITHUB</section>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" width="50px" alt="CSS"/>
                             <span>NPM</span>
                         </div>
                         
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" width="50px" alt="CSS"/>
                             <span>LINUX</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" width="50px" alt="CSS"/>
                             <span>POSTMAN</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg" width="50px" alt="CSS"/>
                             <span>UBUNTU</span>
                         </div>
     
-                        <div>
+                        <div class="skill-card">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" width="50px" alt="CSS"/>
                             <span>VITE</span>
                         </div>
@@ -280,9 +309,7 @@
                         <input type="submit" value="Submit">
                     </form>
                 </section>
-                
             </section>
-            
         </main>
 
         <footer>
@@ -296,12 +323,23 @@
         </footer>
 
         <script>
+            // function switchSection(sectionId) {
+            //     const sections = document.querySelectorAll('.skills-section');
+            //     sections.forEach(section => section.classList.remove('active'));
+            //     const activeSection = document.getElementById(sectionId);
+            //     if (activeSection) activeSection.classList.add('active');
+            // }
+
             function switchSection(sectionId) {
                 const sections = document.querySelectorAll('.skills-section');
                 sections.forEach(section => section.classList.remove('active'));
+
                 const activeSection = document.getElementById(sectionId);
-                if (activeSection) activeSection.classList.add('active');
+                if (activeSection) {
+                    activeSection.classList.add('active');
+                }
             }
+
         </script>
     </body>
 </html>
