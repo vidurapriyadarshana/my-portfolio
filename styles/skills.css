@@ -7,11 +7,6 @@
     color: white;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px;
-}
 
 .skills-section {
     display: none; 
@@ -45,7 +40,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -53,9 +48,11 @@
     margin: 10px;
     cursor: pointer;
     max-width: 200px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .skill-card img {
@@ -69,14 +66,16 @@
 .skill-card span {
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9); 
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2); 
 }
 
 .skill-card:hover img {
@@ -86,6 +85,7 @@
 .skill-card:hover span {
     color: #3498db; 
 }
+
 
 .radio-inputs {
     

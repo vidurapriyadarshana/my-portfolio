@@ -12,8 +12,9 @@ body {
     backdrop-filter: blur(10px); */
 }
 
-
-/* video {
+/* 
+video {
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -31,16 +32,14 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; 
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
 }
 
 @media (max-width: 768px) {
     main {
-        flex-direction: column; 
+        grid-template-columns: 1fr;
     }
 
     .left-section {
