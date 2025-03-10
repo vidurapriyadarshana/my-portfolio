@@ -1,90 +1,93 @@
-.logo {
-    padding-left: 10px;
-    font-family: comfortaa;
+.nav-bar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px;
+  position: relative; 
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    flex-grow: 1;
-    padding: 10px;
+.logo {
+  padding-left: 10px;
+  font-family: comfortaa;
+  position: absolute; 
 }
 
 .button-background {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    background-color: #262626;
-    border-radius: 10px;
-    height: 30px;
-    padding: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: #262626;
+  border-radius: 10px;
+  height: 30px;
+  padding: 10px;
+  transition: all ease-in-out 0.3s;
 }
 
 .nav-buttons {
-    padding: 8px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: transparent 1px solid;
-    margin: 0 3px; 
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: transparent 1px solid;
+  margin: 0 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
 .nav-buttons:hover {
-    border: white 1px solid;
-    border-radius: 10px;
+  transform: translateY(-5px); 
 }
 
 .nav-icone {
-    width: 25px;
+  width: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
+.nav-buttons:hover .nav-icone {
+  transform: scale(1.1); 
+  filter: brightness(1.5); 
+}
 
-
-
-
-
-/* From Uiverse.io by akshat-patel28 */ 
 .button-container {
-    display: flex;
-    background-color: rgba(245, 73, 144);
-    width: 250px;
-    height: 47px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-          rgba(245, 73, 144, 0.5) 5px 10px 15px;
-  }
-  
-  .button {
-    outline: 0 !important;
-    border: 0 !important;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    transform: translateY(-3px);
-  }
-  
-  /* Style for the img tags inside buttons */
-  .button img {
-    width: 30px; /* Ensure the icons are sized appropriately */
-    height: 30px;
-  }
-  
-  .icon {
-    font-size: 20px; /* This might not be needed anymore, as we are using img tags */
-  }
-  
+  display: flex;
+  background-color: #262626;
+  width: 250px;
+  height: 50px; 
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+  padding: 5px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-5px); 
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.button img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.button:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
