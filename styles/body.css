@@ -1,28 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin: 0; 
+    margin: 0;
     padding: 0 50px;
     height: 100%;
-    position: relative; 
+    position: relative;
     overflow: auto;
     background-color: black;
-
-    /* background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); */
 }
-
-
-/* video {
-    backdrop-filter: blur(10px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
-} */
 
 header {
     display: flex;
@@ -32,23 +17,9 @@ header {
 }
 
 main {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 50px;
-}
-
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    .left-section {
-        width: 40%; 
-    }
-
-    .right-section {
-        width: 60%;
-    }
+    gap: 0px;
 }
 
 .skills-section {
@@ -59,17 +30,59 @@ main {
     display: block;
 }
 
-/* footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #333;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin-top: 50px;
-    border-radius: 10px;
-} */
+/* Desktop */
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0 30px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+}

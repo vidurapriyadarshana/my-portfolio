@@ -1,19 +1,19 @@
-.ass-title{
+.ass-title {
   font-size: 100px;
-    color: white;
+  color: white;
 }
 
 .card {
   width: 500px;
   height: 254px;
-  border-radius: 8px; 
-  background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(12px); 
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   display: flex;
   gap: 5px;
   padding: 0.4em;
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,4 +50,62 @@
 
 .card p:hover span {
   transform: rotate(0);
+}
+
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+  .card {
+     width: 450px;
+     height: 230px;
+  }
+  
+  .ass-title {
+     font-size: 80px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .card {
+     width: 350px;
+     height: 200px;
+     flex-direction: column;
+  }
+  
+  .ass-title {
+     font-size: 60px;
+  }
+  
+  .card p {
+     width: 100%;
+  }
+  
+  .card p:hover {
+     flex: 2;
+  }
+  
+  .card p span {
+     min-width: 10em;
+     transform: rotate(0);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .card {
+     width: 90%;
+     height: 180px;
+     padding: 0.2em;
+  }
+  
+  .ass-title {
+     font-size: 40px;
+  }
+  
+  .card p span {
+     min-width: 8em;
+     font-size: 0.8em;
+     letter-spacing: 0.05em;
+  }
 }

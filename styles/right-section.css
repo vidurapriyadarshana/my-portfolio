@@ -1,6 +1,42 @@
-.right-section{
+.right-section {
     margin-top: 30px;
     padding: 10px;
     flex: 2;
     min-width: 400px;
+    width: 100%;
+    max-width: 600px; 
+}
+
+/* Mobile  */
+@media (max-width: 480px) {
+    .right-section {
+        min-width: 100%; 
+        padding: 5px;
+        margin-top: 15px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .right-section {
+        min-width: 100%; 
+        max-width: 100%;
+        padding: 8px;
+    }
+}
+
+/*  Desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .right-section {
+        min-width: 350px;
+        max-width: 500px;
+    }
+}
+
+/* Large */
+@media (min-width: 1025px) {
+    .right-section {
+        min-width: 400px;
+        max-width: 600px;
+    }
 }

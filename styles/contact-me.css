@@ -1,11 +1,147 @@
-.lets-txt{
+.lets-txt {
     font-size: 100px;
     color: white;
 }
 
-.together-txt{
+.together-txt {
     margin-top: -25px;
     font-size: 100px;
-    color: #424040;
+    color: #fb7743;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form label {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #fb7743;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #F46C38;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 527px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #fb7743;
+    transform: scale(1.02);
+}
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+    .lets-txt,
+    .together-txt {
+        font-size: 80px;
+    }
+
+    .contact-form {
+        width: 450px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 477px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .lets-txt,
+    .together-txt {
+        font-size: 60px;
+        margin-top: -15px;
+    }
+
+    .contact-form {
+        width: 350px;
+        padding: 15px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .lets-txt,
+    .together-txt {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .contact-form textarea {
+        min-height: 80px;
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

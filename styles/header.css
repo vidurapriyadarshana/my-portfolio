@@ -1,21 +1,21 @@
 .nav-bar {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
   padding: 10px;
-  position: relative; 
+  position: relative;
 }
 
 .logo {
   padding-left: 10px;
   font-family: comfortaa;
-  position: absolute; 
+  position: absolute;
 }
 
 .button-background {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #262626;
   border-radius: 10px;
@@ -36,24 +36,24 @@
 }
 
 .nav-buttons:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 .nav-icone {
   width: 30px;
-  transition: transform 0.3s ease, filter 0.3s ease; 
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .nav-buttons:hover .nav-icone {
-  transform: scale(1.1); 
-  filter: brightness(1.5); 
+  transform: scale(1.1);
+  filter: brightness(1.5);
 }
 
 .button-container {
   display: flex;
   background-color: #262626;
   width: 250px;
-  height: 50px; 
+  height: 50px;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
@@ -72,22 +72,99 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  transition: transform 0.3s ease, background-color 0.3s ease; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
 }
 
 .button:hover {
-  transform: translateY(-5px); 
-  background-color: rgba(255, 255, 255, 0.1); 
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .button img {
   width: 30px;
   height: 30px;
-  transition: transform 0.3s ease, filter 0.3s ease; 
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .button:hover img {
   transform: scale(1.1);
   filter: brightness(1.5);
+}
+
+/* Desktop */
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+     padding: 8px;
+  }
+
+  .button-container {
+     width: 230px;
+     height: 45px;
+  }
+
+  .button {
+     width: 35px;
+     height: 35px;
+  }
+
+  .button img {
+     width: 25px;
+     height: 25px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+     flex-direction: column;
+     padding: 5px;
+  }
+
+  .logo {
+     position: static;
+     padding-bottom: 10px;
+     text-align: center;
+  }
+
+  .button-container {
+     width: 200px;
+     height: 40px;
+  }
+
+  .button {
+     width: 30px;
+     height: 30px;
+  }
+
+  .button img {
+     width: 20px;
+     height: 20px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .nav-bar {
+     padding: 3px;
+  }
+
+  .logo {
+     font-size: 0.9em;
+  }
+
+  .button-container {
+     width: 180px;
+     height: 35px;
+  }
+
+  .button {
+     width: 25px;
+     height: 25px;
+  }
+
+  .button img {
+     width: 18px;
+     height: 18px;
+  }
 }
