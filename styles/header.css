@@ -92,27 +92,7 @@
   filter: brightness(1.5);
 }
 
-/* Desktop */
-@media screen and (max-width: 1200px) {
-  .nav-bar {
-     padding: 8px;
-  }
 
-  .button-container {
-     width: 230px;
-     height: 45px;
-  }
-
-  .button {
-     width: 35px;
-     height: 35px;
-  }
-
-  .button img {
-     width: 25px;
-     height: 25px;
-  }
-}
 
 /* Tablets */
 @media screen and (max-width: 768px) {

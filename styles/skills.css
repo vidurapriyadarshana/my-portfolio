@@ -1,5 +1,5 @@
 .skills {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .skills-title {
@@ -182,22 +182,3 @@
     }
 }
 
-/* Desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .skills-title {
-        font-size: 85px;
-    }
-
-    .skills-section.active {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-}
-
-/* Large Screens */
-@media (min-width: 1025px) {
-    .skills-section.active {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-}

@@ -25,18 +25,3 @@
     }
 }
 
-/*  Desktops */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .right-section {
-        min-width: 350px;
-        max-width: 500px;
-    }
-}
-
-/* Large */
-@media (min-width: 1025px) {
-    .right-section {
-        min-width: 400px;
-        max-width: 600px;
-    }
-}

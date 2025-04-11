@@ -1,5 +1,5 @@
 .projects{
-    
+    margin-bottom: 50px;
 }
 
 .txt-projects{
@@ -117,32 +117,7 @@
     }
 }
 
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-    .txt-projects {
-        font-size: 75px; 
-    }
 
-    .project-section.active {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .project-card {
-        width: calc(50% - 15px); 
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .project-card img {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 10px;
-    }
-}
-
-/* Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
     .txt-projects {
         font-size: 90px;
@@ -158,15 +133,3 @@
     }
 }
 
-/* Desktops */
-@media (min-width: 1440px) {
-    .project-section.active {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .project-card {
-        width: calc(33.33% - 20px);
-    }
-}

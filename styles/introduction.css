@@ -1,6 +1,7 @@
 .introduction {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 50px;
 }
 
 .software-txt {
@@ -43,18 +44,7 @@
     width: 30px;
 }
 
-/* Desktop */
-@media screen and (max-width: 1200px) {
-    .software-txt,
-    .engineer-txt {
-        font-size: 80px;
-    }
 
-    .intro-desc {
-        font-size: 18px;
-        width: 70%;
-    }
-}
 
 /* Tablets */
 @media screen and (max-width: 768px) {

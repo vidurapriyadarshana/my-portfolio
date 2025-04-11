@@ -68,21 +68,7 @@
     transform: scale(1.02);
 }
 
-/* Desktop */
-@media screen and (max-width: 1200px) {
-    .lets-txt,
-    .together-txt {
-        font-size: 80px;
-    }
 
-    .contact-form {
-        width: 450px;
-    }
-
-    .contact-form input[type="submit"] {
-        width: 477px;
-    }
-}
 
 /* Tablets */
 @media screen and (max-width: 768px) {

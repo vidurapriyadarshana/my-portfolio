@@ -30,16 +30,7 @@ main {
     display: block;
 }
 
-/* Desktop */
-@media screen and (max-width: 1200px) {
-    body {
-        padding: 0 30px;
-    }
 
-    main {
-        grid-template-columns: 1fr 1.5fr;
-    }
-}
 
 /* Tablets */
 @media screen and (max-width: 768px) {
